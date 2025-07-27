@@ -55,7 +55,7 @@ public class BurgerTest {
     public void moveIngredient() {
         Burger burger = new Burger();
         burger.addIngredient(firstIngredient);
-        burger.addIngredient(secondIngredient);  // TODO: rewrite this!
+        burger.addIngredient(secondIngredient);
         burger.moveIngredient(0, 1);
         assertEquals(firstIngredient, burger.ingredients.get(1));
     }
@@ -70,7 +70,6 @@ public class BurgerTest {
         Mockito.verify(firstIngredient, Mockito.times(1)).getPrice();
     }
 
-    // TODO: fix broken test
     @Test
     public void getReceipt() {
         Burger burger = new Burger();
