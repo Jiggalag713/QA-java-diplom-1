@@ -15,7 +15,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
 public class BurgerTest {
-    private Burger burger;
 
     @Mock
     Bun bun;
@@ -25,9 +24,6 @@ public class BurgerTest {
 
     @Mock
     Ingredient secondIngredient;
-
-    @Mock
-    List<Ingredient> ingredients;
 
     @Test
     public void setBun() {
